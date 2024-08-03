@@ -6,7 +6,7 @@ import "ag-grid-community/styles/ag-theme-quartz.css"; // Optional Theme applied
 
 async function fetchData() {
   try {
-    const { data } = await axios.get("http://localhost:8080/data");
+    const { data } = await axios.get("http://localhost:3000/data");
     return data;
   } catch (error) {
     console.error("Error fetching data:", error);
@@ -24,7 +24,6 @@ function App() {
     fetchDataAsync();
   }, []);
 
-  console.log(data ? typeof data : "net");
   const [colDefs] = useState([
     { field: "articleid", flex: 1 },
     { field: "subarticleid", flex: 1 },
