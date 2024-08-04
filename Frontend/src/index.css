@@ -7,7 +7,8 @@
 html,body{
   width: 100%;
   height: 100%;
-  background: linear-gradient(45deg, rgb(238, 238, 238), rgb(224, 224, 224))
+  background: rgb(189,190,193);
+background: linear-gradient(140deg, rgba(189,190,193,1) 0%, rgba(0,91,178,1) 35%, rgba(255,255,255,1) 100%);
 }
 .container{
   display: flex;

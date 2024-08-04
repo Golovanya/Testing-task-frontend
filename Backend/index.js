@@ -15,10 +15,7 @@ app.use(cors());
   fs.createReadStream('data.csv')
   .pipe(csv())
   .on('data', (data) => results.push(data))
-  .on('end', () => {
-    console.log(results);
- 
-  });
+  
   app.get('/data', (req, res) => {
     res.send(results);
   });

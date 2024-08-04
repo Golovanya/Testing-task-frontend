@@ -36,8 +36,8 @@ function App() {
   return (
     <div className="container">
       <div
-        className="ag-theme-quartz-dark" // applying the Data Grid theme
-        style={{ height: 500 }} // the Data Grid will fill the size of the parent container
+        className="ag-theme-quartz-dark" 
+        style={{ height: 700 }} 
       >
         <AgGridReact
           rowData={data}
